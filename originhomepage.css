@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+h1 {
+    color: red;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+p { 
+    color: purple;
+    margin-left: 0px;
+}
+.picture {
+    display: inline-block;
+    background-color: #6366F1;
+    height: 528px;
+    width: 1400px;
+}
+.picture2 {
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    top: 825px;
+    left: 750px;
+    height: 590px;
+    width: 590px;
+}
+.picture3 {
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    top: 1625px;
+    left: 30px;
+    height: 590px;
+    width: 590px;
+}
+.info {
+    display: inline-block;
+    background-color: #363636;
+    top: 2402px;
+    height: 468px;
+    width: 1400px;
+}
+.firstlines, .processes, .secondlines, .geniuses {
+    position: absolute;
+}
+
+.firstlines {
+    top: 1025px; /* Moves the <h2> 50px from the top */
+    left: 40px; /* Moves the <h2> 100px from the left */
+    color: black;
+}
+
+.processes {
+    top: 1075px; /* Moves the <p> 150px from the top */
+    left: 40px; /* Moves the <p> 100px from the left */
+    color: grey;
+}
+.secondlines {
+    top: 1850px;
+    left: 750px;
+    color: black;
+}
+.geniuses {
+    top: 1900px;
+    left: 750px;
+    color: grey;
+}
+.offset-button-left {
+    width: 310px;
+    height: 77px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1175px;
+    left: 40px;  
+    transform: translateY(-50%);  
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offset-button-left:hover {
+    background-color: #4b4ef7;
+}
+
+.offset-button-right {
+    width: 310px;
+    height: 77px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2000px;
+    left: 750px;
+    transform: translateY(-50%);
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.offset-button-right:hover {
+    background-color: #4b4ef7;
+}
+/* .banner-image {
+    width: 1440px;
+    height: 528px;
+    align-items: center;
+}
+*/
+
+.link1 {
+    width: 1440px;
+    height: 528px;
+}
+.link2 {
+    width: 590px;
+    height: 590px;
+}
+.link3 {
+    width: 590px;
+    height: 590px;
+}

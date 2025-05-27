@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#outlines {
+    width: 396px;
+    height: 532px;
+    background-color: lightgray;
+    position: absolute;
+}
+
+.top-left-card {
+    background-color: red;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-630px);
+}
+
+.top-center-card {
+    background-color: orange;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-198px);
+}
+
+.top-right-card {
+    background-color: yellow;
+    top: 150px;
+    left: 50%;
+    transform: translateX(234px);
+}
+
+.bottom-left-card {
+    background-color: green;
+    top: 699px;
+    left: 50%;
+    transform: translateX(-630px);
+}
+
+.bottom-center-card {
+    background-color: blue;
+    top: 699px;
+    left: 50%;
+    transform: translateX(-198px);
+}
+
+.bottom-right-card {
+    background-color: purple;
+    top: 699px;
+    left: 50%;
+    transform: translateX(234px);
+}
+
+#outlines::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 392px;
+}
+
+#outlines::after {
+    display: block;
+    height: 140px;
+    background-color: #f4f4f4;
+    line-height: 140px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-content-tl {
+    left: -100px;
+}
+
+.genius-image {
+    max-height: 392px;
+    max-width: 396px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.genius-card {
+    max-width: 392px;
+    padding-bottom: 50px;
+    background-color: red;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.offset-button {
+    position: absolute;
+    bottom: 10px;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 105px;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: #6366F1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.offset-button:hover {  
+    background-color: #4b4ef7;  
+
+}
