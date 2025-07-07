@@ -2,25 +2,45 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    overflow: auto;
 }
+
 h1 {
     color: red;
     margin-top: 100px;
     margin-left: 0px;
 }
 p { 
-    color: purple;
-    margin-left: 0px;
+    color:black;
+}
+
+#container{
+    width: 100%;
+}
+
+#holder {
+    width: 375px;
+    height: 40px;
+    margin-right: 650px;
+    gap: 8px;
+    font-size: medium;
+    outline-color: #E5E5E5;
+    border-color: #E5E5E5;
+    border: 1px;
+    border-radius: 6px;
+}
+
+
+#containerText{
+    position: static;
+    color: #000000;
+    margin-top: 45px;
+    margin-right: 1200px;
+    width: 110;
 }
 .picture {
-    display: inline-block;
-    background-color: #6366F1;
-    height: 528px;
-    width: 1440px;
-    margin-left: -110px;
+    position: absolute;
+    height: 600px;
+    width: 100%;
 }
 .picture2 {
     position: absolute;
