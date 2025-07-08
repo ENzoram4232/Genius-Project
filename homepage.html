@@ -5,31 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
     <link rel="stylesheet" href="homepage.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="container">
             <input id="holder" type="text" placeholder="Search">
             <p id="containerText">GENIUS WITHIN</p>
+            <a class="headerLinks" id="geniuses" href="http://127.0.0.1:5500/aboutpage.html"> About the Geniuses </a>
+            <a class="headerLinks" id="makingOf" href="http://127.0.0.1:5500/aboutpage.html"> The making of </a>
         </div>
-    </div>
     </header>
 
-     <div id="outlines" class="picture" style="display: box">
-        <img src="images/homePage/HeaderGraphic.png" alt="Genius Banner" class="link1">
-    <div id="outlines1" class="picture2" style="display: box">
-        <img src="images/homePage/GroupPhoto.png" alt="Picture1" class="link2">
+    <div id="outlines" class="HeaderGraphic" style="display: box">
+        <img id="picture1" src="images/homePage/HeaderGraphic.png" alt="Genius Banner" class="link1">
+    <div id="outlines1" style="display: box">
+        <img id="picture2" class="picture" src="images/homePage/GroupPhoto.png" alt="Picture1" class="link2">
     </div>
-    <div id="outlines2" class="picture3" style="display: box">
-        <img src="images/homePage/AboutTheGeniuses.png" alt="Picture2" class="link3">
+    <div id="outlines2" style="display: box">
+        <img id="picture3" class="picture" src="images/homePage/AboutTheGeniuses.png" alt="Picture2" class="link3">
     </div>
+
     <h1>Unlocking the Innovator Inside</h1>
-    <p>My name is Jeremiah. I am a sophomore at CRLS.</p>
-    <h2 class="firstlines">The Making of</h2>
-    <p class="processes">The process behind the Genius Within Installation</p>
+
+    <div id="obj1">
+        <h2 class="firstlines">The Making of</h2>
+        <p class="processes">The process behind the Genius Within Installation</p>
+        <button class="offset-button-left">Learn More</button>
+    </div>
+
+    <div id="seperationLine"></div>
+    
     <h2 class="secondlines">About the Geniuses</h2>
-    <p class="geniuses">Learn about the geniuses who brought the installation to life.</p>
-    <button class="offset-button-left">Learn More</button>
+    <p class="geniuses">Learn about the geniuses who brought the</p>
+    <p class="geniuses2">installation to life.</p>
     <button class="offset-button-right">Learn More</button>
+
+    <div id="credits">
+        
+        <div class="info1">
+            <h2 id="c1">Inovators for Purpose</h2>
+            <p class="infoText1">91 1st Street #425475</p>
+            <p class="infoText1">Cambridge, MA 02141-1804</p>
+            <p class="infoText1">Empowering a New Generation of <br>Diverse, Socially Conscious Innovators.</p>
+            <p id="tag">© 2014-25 Innovators for Purpose</p>
+        </div>
+        
+        <div class="info2">
+            <h2 class="c2">Info</h2>
+            <a class="infoText2">Our Story</a>
+            <a class="infoText2">Our Programs</a>
+            <a class="infoText2">Our Project</a>
+            <a class="infoText2">Our Events</a>
+            <a class="infoText2">News + Updates</a>
+            <a class="infoText2">Why AI Podcast</a>
+        </div>
+        
+        <div class="info3">
+            <h2 class="c3">Action</h2>
+            <p class="infoText3">Donate</p>
+            <p class="infoText3">Sponsorship</p>
+            <p class="infoText3">Contact</p>
+        </div>
+
+    </div>
 </body>
 </html>
