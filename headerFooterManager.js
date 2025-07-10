@@ -1,18 +1,11 @@
-class SpecialHeader extends HTMLElement {
-    ConnectedCallback() {
-        this.innerHTML = `
-        <div id="container">
-            <input id="holder" type="text" placeholder="Search">
-            <p id="containerText">GENIUS WITHIN</p>
-            <a id="geniuses" href="http://127.0.0.1:5500/aboutpage.html">
-                <button class="genius-button">About The Geniuses</button>
-            </a>
-            <div class="makingOf-button">
-                <a class="headerLinks" id="makingOf" href="http://127.0.0.1:5500/aboutpage.html"> The making of </a>
-            </div>
-        </div>
-        `
-    }
-}
+fetch('header.html')
+.then(res=> res.text())
+.then(data => {
+    document.getElementById('header').innerHTML = data;
+});
 
-customElements.define('special-header', SpecialHeader)
+fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer').innerHTML = data;
+    });

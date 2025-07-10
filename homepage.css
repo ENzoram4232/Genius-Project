@@ -124,24 +124,25 @@ input{
 
 #picture1 {
     width:100%;
+    height: 720px;
     margin-right: 20px;
-    transform: translateY(11%);
+    transform: translateY(9%);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 #picture2 {
-    top: 825px;
-    left: 750px;
+    top: 1500px;
+    left: 820px;
     height: 590px;
     width: 590px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #picture3 {
-    top: 1625px;
-    left: 30px;
-    height: 590px;
-    width: 700px;
+    top: 1000px;
+    left: 100px;
+    height: 420px;
+    width: auto;
     overflow: hidden; /* Crop overflow */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -180,31 +181,26 @@ input{
 }
 
 .firstlines {
-    top: 1025px; /* Moves the <h2> 50px from the top */
+    top: 1600px; /* Moves the <h2> 50px from the top */
     left: 150px; /* Moves the <h2> 100px from the left */
     color: black;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .processes {
-    top: 1090px; /* Moves the <p> 150px from the top */
-    left: 150px; /* Moves the <p> 100px from the left */
-    font-size: 20px;
+    top: 1650px; /* Moves the <p> 150px from the top */
+    left: 152px; /* Moves the <p> 100px from the left */
+    font-size: 22px;
 }
 .secondlines {
-    top: 1850px;
-    left: 800px;
+    top: 1050px;
+    left: 820px;
     color: black;
-    font-size: 25px;
+    font-size: 30px;
 }
 .geniuses {
-    top: 1915px;
-    left: 800px;
-    font-size: 20px;
-}
-.geniuses2 {
-    top: 1955px;
-    left: 800px;
+    top: 1100px;
+    left: 820px;
     font-size: 20px;
 }
 
@@ -217,10 +213,11 @@ input{
 .offset-button-left {
     width: 310px;
     height: 77px;
-    font-size: 1.5rem;
+    font-size: 24px;
+    padding: 10px;
     position: absolute;
-    top: 1165px;
-    left: 150px;  
+    top: 1820px;
+    left: 160px;  
     background-color: #6366F1;
     color: white;
     border: none;
@@ -231,7 +228,7 @@ input{
 }
 
 #seperationLine {
-    background-color: #D4D4D4;
+   
     width: 1250px;
     height: 1px;
     align-self: center;
@@ -244,8 +241,8 @@ input{
     height: 77px;
     font-size: 1.5rem;
     position: absolute;
-    top: 2030px;
-    left: 796px;
+    top: 1300px;
+    left: 810px;
     background-color: #6366F1;
     color: white;
     border: none;
@@ -275,7 +272,7 @@ input{
     background-color: #1f1f1f;
     padding-top: 50px;
     height: 350px;
-    transform: translateY(200%);
+    transform: translateY(120%);
 }
 
 .info1 {

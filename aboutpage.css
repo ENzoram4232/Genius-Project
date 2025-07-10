@@ -6,6 +6,10 @@ body {
 h1 {
     text-align: center;
 }
+table {
+  border-collapse: separate; /* Required for border-spacing to work */
+  border-spacing: 30px; /* Adds 10px spacing between cells */
+}
 
 #outlines {
     width: 396px;
@@ -37,49 +41,6 @@ h1 {
     font-weight: bold;
 }
 
-.top-left-card {
-    background-color: red;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-630px);
-}
-
-.top-center-card {
-    background-color: orange;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-198px);
-}
-
-.top-right-card {
-    background-color: yellow;
-    top: 150px;
-    left: 50%;
-    transform: translateX(234px);
-}
-
-.bottom-left-card {
-    background-color: green;
-    top: 699px;
-    left: 50%;
-    transform: translateX(-630px);
-}
-
-.bottom-center-card {
-    background-color: blue;
-    top: 699px;
-    left: 50%;
-    transform: translateX(-198px);
-}
-
-.bottom-right-card {
-    background-color: purple;
-    top: 699px;
-    left: 50%;
-    transform: translateX(234px);
-}
-
-
 .text-content-tl {
     left: -100px;
 }
@@ -94,7 +55,8 @@ h1 {
 
 .genius-name {
     position: absolute;
-    left: 25px;
+    text-align: left;
+    margin-left: 20px;
     bottom: 95px;
     font-size: 18px;
     width:300px;
@@ -108,10 +70,9 @@ h1 {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     position: relative;
-    left: 150px;
+    left: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     transition-duration: .5s;
-    margin-bottom: 50px;
 }
 
 .genius-card:hover {
@@ -136,4 +97,8 @@ h1 {
 
 .offset-button:hover {  
     background-color: #4b4ef7;  
+}
+
+.footer {
+    height: 1px;
 }
