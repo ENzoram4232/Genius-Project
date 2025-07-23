@@ -33,12 +33,14 @@ body {
     font-weight: 400;
     font-family: "Inter", sans-serif;
     text-align: left;
+    margin: 0 auto;
 }
 
 .paragraph {
     width: 1200px;
     height: auto;
     text-align: left;
+    margin: 0 auto;
 }
 
 .image img {
