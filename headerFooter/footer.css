@@ -14,7 +14,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 30px;
+    gap: 10px;
     position: relative;
     color: #CDCDCD;
     font-family: "Alice", serif;
@@ -55,7 +55,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 
 
