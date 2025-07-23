@@ -14,16 +14,17 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
     position: relative;
     color: #CDCDCD;
     font-family: "Alice", serif;
     text-align: left;
+    gap: 0px; /* Was 30px */
+    padding-top: 30px; /* Optional: reduce top padding */
+    margin-top: 30px; /* Optional: reduce top margin */
 }
 
 .info1, .info2, .info3, .text-box {
-    width: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 20px; /* Was 50px */
 }
 
 .infoText1,
