@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>home Page</title>
     <link rel="stylesheet" href="homepage.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="header"></div>
 
-    <div id="outlines" class="HeaderGraphic" style="display: box">
-    <img id="picture1" src="images/homePage/HeaderGraphic.png" alt="Genius Banner" class="link1">
-    <div id="outlines1" style="display: box">
-        <img id="picture2" class="picture" src="images/homePage/GroupPhoto.png" alt="Picture1" class="link2">
-    </div>
-    <div id="outlines2" style="display: box">
-        <img id="picture3" class="picture" src="images/homePage/AboutTheGeniuses.png" alt="Picture2" class="link3">
-    </div>
+    <div class="poster"><img src="images/homePage/HeaderGraphic.jpeg"></div>
 
     <h1>Unlocking the Innovator Inside</h1>
 
-    <div id="obj1">
-        <h2 class="firstlines">The Making of The Genius Project</h2>
-        <p class="processes">The process behind the Genius Within Installation</p>
-        <button id="offset-buttons" class="offset-button-left">Learn More →</button>
-    </div>
+    <div class="content">
 
-    <div id="seperationLine"></div>
-    
-    <div id="obj2">
-        <h2 class="secondlines">About the Geniuses</h2>
-        <p class="geniuses">Learn about the geniuses who brought the installation to life.</p>
-        <a href="http://127.0.0.1:5500/aboutpage.html">
-            <button id="offset-buttons" class="offset-button-right">Learn More →</button>
-        </a>
+        <div class="container">
+            <div class="content-block1">
+                <div class="img1"><img src="images/homePage/AboutTheGeniuses.png"></div>
+                <div class="text-content1">
+                    <h2 class="title">The Making of the Genius Project</h2>
+                    <p class="description">The process behind the Genius Within installation.</p>
+                    <a href="http://127.0.0.1:5501/TheMakingOf.html"><button class="btn1" id="btn">Learn More →</button></a>
+                </div>
+            </div>
+
+            <div class="content-block2">
+                <div class="text-content2">
+                    <h2 class="title">About The Geniuses</h2>
+                    <p class="description">Learn about the geniuses who brought the installation to life.</p>
+                    <a href="http://127.0.0.1:5501/aboutpage.html"><button class="btn1" id="btn">Learn More →</button></a>
+                </div>
+                <div class="img2"><img src="images/homePage/GroupPhoto.png"></div>
+            </div>
+        </div>
+
     </div>
 
     <div id="footer"></div>
