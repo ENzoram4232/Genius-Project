@@ -54,6 +54,10 @@ p {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .5);
 }
 
+.img2 {
+    margin-top: 450px;
+}
+
 .img2 img {
     border-radius: 15px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .5);
@@ -64,7 +68,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 150px;
+    margin-top: 0px;
     margin-left: 50px;
     font-family: "Inter", sans-serif;
 }
@@ -74,8 +78,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     margin-left: 50px;
     font-family: "Inter", sans-serif;
 }
@@ -106,8 +109,13 @@ p {
 }
 
 
-.content-block2 {
+.content-block1 {
+    background-color: rebeccapurple;
+    width: 100vh;
+}
 
+.content-block2 {
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -128,4 +136,70 @@ p {
     transform: translateY(-8%);
     background-color: white;
     color:#6366F1;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 25px;
+        margin: 20px 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .content-block1,
+    .content-block2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .img1, .img2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .img1 img, .img2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img2 {
+        margin-top: auto;
+    }
+
+    .text-content1, .text-content2 {
+        margin: 0px 0 0 0;
+        text-align: left;
+        align-items: left;
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    #btn {
+        width: 41vh;
+        height: 60px;
+        font-size: 16px;
+        margin-bottom: 3em;
+        margin-top: 1em;
+    }
+
+    .poster img {
+        box-shadow: none;
+    }
 }

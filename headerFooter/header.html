@@ -13,16 +13,22 @@
 <body>
     <header>
         <div id="container">
-            <div onclick="history.back(-1)" class="left-button"><img src="../images/icons/chevron-left-circle.svg"></div>
-            <input id="holder" type="text" placeholder="Search">
-            <p id="containerText">GENIUS WITHIN</p>
-            <a id="geniuses" href="http://127.0.0.1:5501/aboutpage.html">
-                <button class="genius-button">About The Geniuses</button>
-            </a>
-            <div class="makingOf-button">
-                <a class="headerLinks" id="makingOf" href="http://127.0.0.1:5501/TheMakingOf.html"> The making of The Genius Within</a>
+            <div class="left-group">
+                <div onclick="history.back(-1)" class="left-button">
+                    <img src="../images/icons/chevron-left-circle.svg">
+                </div>
+                <p id="containerText">GENIUS WITHIN</p>
+            </div>
+
+            <div class="more-button" onclick="toggleDropdown()"></div>
+
+            <div id="moreDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search" id="searchInput" onkeyup="filterFunction()">
+                <a href="http://127.0.0.1:5501/aboutpage.html">Behind the Geniuses</a>
+                <a href="http://127.0.0.1:5501/TheMakingOf.html">The Making Of</a>
             </div>
         </div>
     </header>
+    <script src="../headerFooter/dropDownMenu.js"></script>
 </body>
 </html>
