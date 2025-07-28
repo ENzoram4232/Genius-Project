@@ -52,8 +52,12 @@ input {
     align-items: center;
     gap: 2em;
     margin-left: auto;
-    margin-right: 1em;
+    margin-right:5em;
     position: relative;
+}
+
+.right-group a {
+    text-decoration: none;
 }
 
 
@@ -74,7 +78,7 @@ input {
 }
 
 .genius-button {
-    width: 180px;
+    width: 191px;
     height: 48px;
     background-color: #E0E7FF;
     color: #6366F1;
@@ -83,7 +87,13 @@ input {
     font-size: 16px;
     transition: background-color 0.5s, color 0.5s;
     margin: 0em 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
+
 
 .genius-button:hover {
     color: #E0E7FF;
@@ -135,6 +145,7 @@ input {
     transition: max-height 0.4s ease, padding 0.4s ease;
     padding: 0 0px;
     text-align: left;
+    transition-duration: 1s;
 }
 
 #container.expanded {
@@ -151,7 +162,7 @@ input {
 }
 
 #moreDropdown input[type="text"] {
-    width: 93%;
+    width: 95%;
     padding: 1px 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -184,6 +195,10 @@ input {
     #containerText {
         font-size: 18px;
         margin: 0.5em 0;
+    }
+
+    .right-group {
+        display: none;
     }
 
     .more-button {

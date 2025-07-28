@@ -2,65 +2,55 @@ body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     text-align: center;
-    margin: 0px;
-    
+    margin: 0;
 }
 
 h1 {
     color: rgb(0, 0, 0);
     margin-top: 40px;
-    margin-left: 0px;
     font-size: 60px;
 }
 
-p { 
-    color:black;
-
+p {
+    color: black;
 }
 
 .poster {
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-.poster img{
+.poster img {
     width: 100%;
     height: auto;
-    box-shadow: 10px 5px 30px rgba(0, 0, 0, .3);
+    box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.3);
 }
 
 .container {
     width: 85%;
-    height: auto;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
 }
 
-.img1 {
+.img1,
+.img2 {
     width: 590px;
     height: 375px;
     flex-shrink: 0;
 }
 
-.img1 img {
+.img1 img,
+.img2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, .5);
-}
-
-.img2 {
-    margin-top: 450px;
-}
-
-.img2 img {
-    border-radius: 15px;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
 .text-content1 {
@@ -68,9 +58,11 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 0px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
     font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .text-content2 {
@@ -78,9 +70,9 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    margin-bottom: 50px;
-    margin-left: 50px;
     font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 500px;
 }
 
 .title {
@@ -88,9 +80,8 @@ p {
     font-size: 32px;
     line-height: 40px;
     font-weight: 700;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     margin: 0;
-    font-family: "Inter", sans-serif;
 }
 
 .description {
@@ -98,8 +89,7 @@ p {
     margin-top: 10px;
     font-weight: 200;
     font-size: 24px;
-    line-height: 100%;
-    font-family: "Inter", sans-serif;
+    line-height: 1.4;
 }
 
 .btn1 {
@@ -108,98 +98,104 @@ p {
     font-size: 16px;
 }
 
-
 .content-block1 {
-    background-color: rebeccapurple;
-    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
 }
 
 .content-block2 {
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
 }
-
 
 #btn {
     width: 310px;
     height: 77px;
     border-radius: 12px;
-    gap: 10px;
     border: none;
     background-color: #6366F1;
     color: white;
-    transition-duration: .5s;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transition: all 0.5s ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 #btn:hover {
-    transition-duration: .5s;
     transform: translateY(-8%);
     background-color: white;
-    color:#6366F1;
+    color: #6366F1;
 }
 
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 20px 10px;
     }
 
+    h2 {
+        margin-top: 0px;
+    }
+
     .container {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        width: 100%;
+        width: 87%;
     }
 
     .content-block1,
     .content-block2 {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
+        align-items: left;
+        margin-bottom: 0px;
+        height: auto;
+        gap: 0px;
+        width: 50vh auto;
     }
 
-    .img1, .img2 {
-        width: 80%;
+    .img1,
+    .img2 {
+        width: 95%;
         height: auto;
     }
 
-    .img1 img, .img2 img {
+    .img1 img,
+    .img2 img {
         width: 100%;
         height: auto;
     }
 
-    .img2 {
-        margin-top: auto;
-    }
-
-    .text-content1, .text-content2 {
-        margin: 0px 0 0 0;
+    .text-content1,
+    .text-content2 {
+        margin: 0 auto;
         text-align: left;
-        align-items: left;
-        padding: 0 15px;
+        width: 90%;
+        font-size: 18px
     }
 
     .title {
         font-size: 20px;
         line-height: 30px;
         margin-top: 25px;
+        align-self: flex-start;
     }
 
     .description {
         font-size: 18px;
+        text-align: start;
     }
 
     #btn {
-        width: 41vh;
-        height: 60px;
-        font-size: 16px;
-        margin-bottom: 3em;
-        margin-top: 1em;
-    }
-
-    .poster img {
-        box-shadow: none;
+        align-self: center;
+        width: 101%;
+        height: 55px;
+        margin-top: 5px;
+        margin-bottom: 25px;
     }
 }

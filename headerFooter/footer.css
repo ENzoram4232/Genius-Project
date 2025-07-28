@@ -99,3 +99,54 @@ h2 {
     transform: translateY(-5%);
     transition-duration: .5s;
 }
+
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #credits {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .info1,
+  .info2,
+  .info3,
+  .text-box {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-box {
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .sub {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+  }
+
+  .email-subscription h2 {
+    font-size: 20px;
+  }
+
+  #tag {
+    text-align: center;
+    font-size: 16px;
+  }
+}
