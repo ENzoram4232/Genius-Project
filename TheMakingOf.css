@@ -224,7 +224,7 @@ p {
 
     .intro {
         flex-direction: column;
-        gap: 50px; /* smaller gap for vertical stacking */
+        gap: 40px;
         align-items: stretch;
     }
 
