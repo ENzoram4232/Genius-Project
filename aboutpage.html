@@ -12,7 +12,6 @@
     <div class="container">
         <div>
             <h1>About the Geniuses</h1>
-            
         </div>
 
         <div class="main-content">
@@ -108,6 +107,32 @@
                 // Oonce found add input listener
                 searchInput.addEventListener("input", function () {
                     const input = searchInput.value.toLowerCase().trim();
+                    const geniusCards = document.querySelectorAll(".genius-card, .tetris-card");
+
+                    geniusCards.forEach(function(card) {
+                        const nameElement = card.querySelector(".genius-name");
+
+                        if (nameElement) {
+                            const name = nameElement.textContent.toLowerCase();
+
+                            if (name.includes(input)) {
+                                card.style.display = ""; // show 
+                            } else {
+                                card.style.display = "none"; // hide
+                            }
+                        }
+                    });
+                });
+
+                // stop observing once search input is found and listener is attached
+                headerObserver.disconnect();
+            }
+            const searchInput2 = document.getElementById("searchInput2"); // Find the search box
+
+            if (searchInput2) {
+                // Oonce found add input listener
+                searchInput2.addEventListener("input", function () {
+                    const input = searchInput2.value.toLowerCase().trim();
                     const geniusCards = document.querySelectorAll(".genius-card, .tetris-card");
 
                     geniusCards.forEach(function(card) {

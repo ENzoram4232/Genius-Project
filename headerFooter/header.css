@@ -19,7 +19,6 @@ input {
     font-weight: 100;
     font-style: normal;
 }
-
 #containerText {
     color: #000000;
     font-size: 24px;
@@ -36,16 +35,14 @@ input {
 .right-group {
     display: flex;
     align-items: center;
-    gap: 2em;
+    width: 60%;
     margin-left: auto;
-    margin-right:5em;
-    position: relative;
+    transform: translateY(-80%);
 }
 
 .right-group a {
     text-decoration: none;
 }
-
 
 .headerLinks {
     text-decoration: none;
@@ -119,13 +116,15 @@ input {
     transition-duration: .4s;
 }
 
+.more-button {
+    background-image: url('../images/icons/Icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .more-button:hover {
     transform: scale(1.2);
     transition-duration: .4s;
-}
-
-.more-button img {
-    margin-top: 8px;
 }
 
 #container {
@@ -135,7 +134,7 @@ input {
   background-color: white;
   overflow: hidden;
 
-  max-height: 7em;
+  max-height: 2em;
   transition: max-height 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -159,7 +158,7 @@ input {
     transition-duration: .5s;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 #moreDropdown a:hover {
@@ -168,12 +167,16 @@ input {
 }
 
 #container.expanded #moreDropdown {
-  max-height: 7em;
+  max-height: 8em;
   padding: 0.5em 0;
 }
 
+#container.expanded .more-button {
+    background-image: url('../images/icons/Icon.svg');
+    transition-duration: 0s;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     #container {
         flex-direction: row;
         align-items: center;
@@ -188,6 +191,7 @@ input {
 
     .right-group {
         display: none;
+        
     }
 
     .more-button {
