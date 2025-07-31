@@ -12,6 +12,7 @@
     <div class="container">
         <div>
             <h1>About the Geniuses</h1>
+            
         </div>
 
         <div class="main-content">
@@ -98,8 +99,45 @@
     </div>
 
     <div id="footer"></div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const headerObserver = new MutationObserver(() => {
+            const searchInput = document.getElementById("searchInput"); // Find the search box
 
-    <script src="../headerFooter/headerFooterManager.js"></script>
-    <script src="../headerFooter/dropDownMenu.js"></script>
+            if (searchInput) {
+                // Oonce found add input listener
+                searchInput.addEventListener("input", function () {
+                    const input = searchInput.value.toLowerCase().trim();
+                    const geniusCards = document.querySelectorAll(".genius-card, .tetris-card");
+
+                    geniusCards.forEach(function(card) {
+                        const nameElement = card.querySelector(".genius-name");
+
+                        if (nameElement) {
+                            const name = nameElement.textContent.toLowerCase();
+
+                            if (name.includes(input)) {
+                                card.style.display = ""; // show 
+                            } else {
+                                card.style.display = "none"; // hide
+                            }
+                        }
+                    });
+                });
+
+                // stop observing once search input is found and listener is attached
+                headerObserver.disconnect();
+            }
+        });
+
+        // start watching the #header element for changes
+        headerObserver.observe(document.getElementById("header"), {
+            childList: true,
+            subtree: true
+        });
+    });
+    </script>
 </body>
+<script src="../headerFooter/headerFooterManager.js"></script>
+<script src="../headerFooter/dropDownMenu.js"></script>
 </html>

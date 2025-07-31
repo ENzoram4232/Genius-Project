@@ -21,19 +21,21 @@
             </div>
 
             <div class="right-group">
-                <a href="aboutpage.html"><div class="genius-button">About the Geniuses</div></a>
-                <a href="TheMakingOf.html"><div class="headerLinks">The Making of</div></a>
+                <a href="../aboutpage.html"><div class="genius-button">About the Geniuses</div></a>
+                <a href="../TheMakingOf.html"><div class="headerLinks">The Making of</div></a>
             </div>
 
-            <div class="more-button" onclick="toggleDropdown()"></div>
+            <div class="more-button" onclick="toggleDropdown()"><img src="../images/icons/Icon.png"></div>
 
             <div id="moreDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search" id="searchInput" onkeyup="filterFunction()">
-                <a href="aboutpage.html">Behind the Geniuses</a>
-                <a href="TheMakingOf.html">The Making Of</a>
+                
+                <input type="text" id="searchInput" placeholder="Search..." />
+                <div id="searchLinks">
+                    <a href="../aboutpage.html">Behind the Geniuses</a>
+                    <a href="../TheMakingOf.html">The Making Of</a>
+                </div>
             </div>
         </div>
     </header>
-    <script src="../headerFooter/dropDownMenu.js"></script>
 </body>
 </html>

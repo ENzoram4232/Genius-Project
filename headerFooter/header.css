@@ -7,31 +7,17 @@
 input {
     width: 90%;
     height: 40px;
-    margin: 1em auto;
     border-radius: 6px;
-    padding: 0 10px;
     border: 2px solid #E5E5E5;
     font-size: 18px;
+    padding-left: 10px;
+    margin-bottom: 1em;
 }
 
 .alice-regular {
     font-family: "Alice", serif;
     font-weight: 100;
     font-style: normal;
-}
-
-#container {
-    position: relative;
-    height: 4em;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: .5em;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    background-color: white;
-    flex-wrap: wrap;
-    overflow: hidden;
-    transition-duration: 1s;
 }
 
 #containerText {
@@ -123,66 +109,69 @@ input {
     height: 30px;
     position: absolute;
     top: 1em;
-    right: .8em;
+    right: 1em;
     cursor: pointer;
     font-size: 16px;
     border-style: solid;
     border-radius: 6px;
     border-width: 2px;
     border-color: #E5E5E5;
-    transition-duration: .5s;
+    transition-duration: .4s;
 }
 
 .more-button:hover {
     transform: scale(1.2);
-    transition-duration: .5s;
+    transition-duration: .4s;
 }
 
-#moreDropdown {
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
-    padding: 0 0px;
-    text-align: left;
-    transition-duration: 1s;
+.more-button img {
+    margin-top: 8px;
+}
+
+#container {
+  position: relative;
+  padding: 1em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  overflow: hidden;
+
+  max-height: 7em;
+  transition: max-height 0.5s ease, box-shadow 0.5s ease;
 }
 
 #container.expanded {
-    transition-duration: .5s;
-    height: auto;
-    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
+  max-height: 16em;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.3);
 }
 
-#container.expanded #moreDropdown {
-    max-height: 200px;
-    padding: 0px;
-    margin-top: 0.0em;
-    transition-duration: 1s;
-}
-
-#moreDropdown input[type="text"] {
-    width: 95%;
-    padding: 1px 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition-duration: .5s;
+#moreDropdown {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
 #moreDropdown a {
-    display: block;
-    padding: 15px 0;
-    color: black;
     text-decoration: none;
-    font-size: 16px;
+    color: black;
     transition-duration: .5s;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
 }
 
 #moreDropdown a:hover {
+    font-size: 18px;
     transition-duration: .5s;
-    font-size: 17px;
 }
+
+#container.expanded #moreDropdown {
+  max-height: 7em;
+  padding: 0.5em 0;
+}
+
 
 @media (max-width: 768px) {
     #container {
@@ -229,11 +218,14 @@ input {
 }
 
 @media (max-width: 500px) {
+    input {
+        height: 35px;
+    }
     #container {
         flex-direction: row;
         align-items: center;
         text-align: center;
-        width:fit-;
+        width: auto;
         position: relative;
     }
 
