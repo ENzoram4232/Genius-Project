@@ -192,6 +192,9 @@ p {
     background-color: #852914; 
 }
 
+#searchInput {
+    visibility: hidden;
+}
 
 @media screen and (max-width: 800px) {
     h1 {

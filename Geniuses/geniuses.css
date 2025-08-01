@@ -50,6 +50,10 @@ h2, .title {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+#searchInput {
+    visibility: hidden;
+}
+
 @media (max-width: 768px) {
     .title, h2 {
         font-size: 1.5rem;

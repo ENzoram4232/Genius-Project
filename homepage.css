@@ -130,6 +130,10 @@ p {
     color: #6366F1;
 }
 
+#searchInput {
+    visibility: hidden;
+}
+
 @media (max-width: 900px) {
 
     h1 {
