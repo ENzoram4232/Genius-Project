@@ -128,10 +128,10 @@ p {
 .row-images1 img,
 .row-images2 img,
 .row-images3 img {
-    width: 100%;
+    width: 110%;
     max-width: 400px;
-    height: auto;
     border-radius: 10px;
+    height: 22em;
 }
 
 .description-container {
