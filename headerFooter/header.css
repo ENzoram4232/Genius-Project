@@ -45,6 +45,12 @@ input {
     flex: 1;
     min-width: 250px;
     transform: translateY(-25%);
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+.left-group a {
+    text-decoration: none;
 }
 
 .left-group input {
